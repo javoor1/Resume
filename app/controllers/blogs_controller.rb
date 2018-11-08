@@ -7,6 +7,10 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
   end
 
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
+
   # GET /blogs/1
   # GET /blogs/1.json
   def show
