@@ -1,4 +1,5 @@
 class Portfolio < ApplicationRecord
+	include Placeholder
 	puts "SELF DENTRO DE Portfolio Class es igual a #{self}  " * 3
 	validates :title, :body, :main_image, :thumb_image, presence: true
 
@@ -12,8 +13,8 @@ class Portfolio < ApplicationRecord
 
   def set_defaults
   	puts "SELF DENTRO DE set_defaults es igual a #{self}" * 3
-  	self.main_image ||= "http://placehold.it/600x400"
-		self.thumb_image ||= "http://placehold.it/350x200"
+  	self.main_image ||= Placeholder.image_generator(height: "600", width: "400")
+		self.thumb_image ||= Placeholder.image_generator(height: "350", width: "200")
   end
 
 end
