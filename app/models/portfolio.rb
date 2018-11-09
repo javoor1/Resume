@@ -1,6 +1,11 @@
 class Portfolio < ApplicationRecord
+	
 	include Placeholder
+	
 	puts "SELF DENTRO DE Portfolio Class es igual a #{self}  " * 3
+
+	has_many :technologies
+	
 	validates :title, :body, :main_image, :thumb_image, presence: true
 
 	after_initialize :set_defaults
