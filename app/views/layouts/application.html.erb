@@ -8,20 +8,23 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
   	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <% if current_user %>
+    <% if current_user.class == "User" %>
       <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
     <% else %>
       <%= link_to 'Register', new_user_registration_path %>
       <%= link_to 'Sign In', new_user_session_path %>
     <% end %>
+
     <%= yield %>
 
     <% if session[:source] %>
       <p>Thanks for visiting me form <%= session[:source] %></p>
     <% end %>
+
   </body>
 </html>
