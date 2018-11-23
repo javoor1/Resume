@@ -4,7 +4,7 @@ module ApplicationHelper
 		if current_user.is_a?(User)
 		  return link_to "Logout", destroy_user_session_path, method: :delete
 		else
-		  (link_to "Register", new_user_registration_path) + 
+		  (link_to "Register", new_user_registration_path) + #para que el método regrese dos cosas concatenamos los links_to de register y login
 		  "<br>".html_safe + 
 		  (link_to "Login", new_user_session_path)
 		end
