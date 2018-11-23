@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem "friendly_id"
+
 
 
 group :development, :test do
@@ -56,3 +56,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise' 
+gem "friendly_id"
+gem 'bootstrap', '~> 4.0.0.alpha6'
