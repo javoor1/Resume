@@ -17,4 +17,9 @@ module ApplicationHelper
     end
 	end
 
+  def set_copyright
+		@copyright = JavierOa::Renderer.copyright("Javier Ortiz Arellano", "Programado en Ruby on Rails" )
+	end
+
+
 end
