@@ -106,3 +106,23 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+
+/*
+ * Custom Styles
+ */
+
+.card-body {
+  color: black;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 0 0.0rem 0.0rem rgba(0, 0, 0, 0.0);
+}
+
+
+.auth-links a {
+  color: black;
+}
