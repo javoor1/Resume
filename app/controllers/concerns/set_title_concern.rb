@@ -2,7 +2,7 @@ module SetTitleConcern
 	extend ActiveSupport::Concern
 
 	included do
-		before_filter :set_title
+		before_action :set_title
 	end
 
 	def set_title
