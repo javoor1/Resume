@@ -32,8 +32,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 
 
 
@@ -60,3 +62,5 @@ gem "friendly_id"
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'javier_oa', git: "https://github.com/javoor1/gem"
 gem 'petergate', '~> 1.7'
+gem "font-awesome-rails"
+gem 'kaminari'
