@@ -15,7 +15,8 @@
     
     <%= render "shared/portfolio_nav" %>
 
-    <%= render "shared/portfolio_header" %>
+    <%= render "shared/portfolio_header" unless logged_in?(:site_admin)   
+    %>
 
 
     <%= yield %> <!-- Te deja incluir el contenido en html.erb fuera del layout -->
