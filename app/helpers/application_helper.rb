@@ -55,7 +55,7 @@ module ApplicationHelper
       nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
     end
     p "Valor nav_links #{nav_links}" 
-    p nav_links.html_safe
+    nav_links.html_safe
   end
 
   def active? path
