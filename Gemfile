@@ -64,3 +64,4 @@ gem 'javier_oa', git: "https://github.com/javoor1/gem"
 gem 'petergate', '~> 1.7'
 gem "font-awesome-rails"
 gem 'kaminari'
+gem 'jquery-ui-rails'
