@@ -13,7 +13,19 @@
   <body class="text-center">
     
     <div class="cover-container d-flex w-100 h-100 p-12 mx-auto flex-column">
+      
       <header class="masthead mb-auto">
+        
+        <%= video_tag(
+            "HardDrivePhotojpeg.mp4",
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'home_bg.png'
+          )
+        %>
+
         <%= render "shared/application_nav" %>
       </header>
 
